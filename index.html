@@ -6,9 +6,9 @@
 
 <script>
 
-fetch("devcomments.json")
-  .then(response => response.json())
-  .then(json => console.log(json));
+$.getJSON("devcomments.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
 </script>
 <body>
 
