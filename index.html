@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>json reading</title>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<script>
+
+fetch("devcomments.json")
+  .then(response => response.json())
+  .then(json => console.log(json));
+</script>
+<body>
+
+<div id="main" class="content">
+
+</div>
+
+</body>
+</html>
